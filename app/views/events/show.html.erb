@@ -1,0 +1,14 @@
+
+
+<h1><%= @event.title %></h1>
+
+<ul>
+  <li><%= @event.description %></li>
+  <li><%= @event.date.strftime '%A, %B %e, %Y' %></li>
+</ul>
+
+
+<div class="controls">
+  <%= link_to 'Edit event', edit_event_path(@event) %>
+  <%= link_to 'Delete event', @event, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+</div>
