@@ -1,0 +1,10 @@
+<div>
+<h1><%= @place.name %></h1>
+<li><%= @place.facilities %></li>
+<li><%= @place.location %></li>
+</div>
+
+<div class="controls">
+  <%= link_to 'Edit event', edit_place_path(@place) %>
+  <%= link_to 'Delete event', @place, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+</div>

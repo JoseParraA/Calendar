@@ -25,6 +25,8 @@
               <nav class="events-nav"><% if @current_user.present? %>
                 <%= link_to 'All events', events_path %>
                 <%= link_to 'New Event', new_event_path %>
+                <%= link_to 'All places', places_path %>
+                <%= link_to 'New Place', new_place_path %>
                 <% else %></nav>
           <% end %>
           <% yield %>
