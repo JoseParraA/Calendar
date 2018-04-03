@@ -1,5 +1,5 @@
 <h1>Events</h1>
-
+<div class="all_events">
 <% @events.each do |event| %>
   <ul>
     <li><%= link_to event.title, event %></li>
@@ -7,3 +7,4 @@
     <li><%= event.date %></li>
   </ul>
 <% end %>
+</div>

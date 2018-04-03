@@ -9,6 +9,8 @@ class EventsController < ApplicationController
 
   def create
     event = Event.create event_params
+    # raise
+
     redirect_to event
   end
 
@@ -24,17 +26,19 @@ class EventsController < ApplicationController
 
   def show
     @event = Event.find params[:id]
+
   end
 
   def destroy
     event = Event.find params[:id]
     event.destroy
-    redirect_to event_path
+     #binding.pry
+    redirect_to event
   end
 
   private
 
   def event_params
-    params.require(:event).permit(:title, :date, :description)
+    params.require(:event).permit(:title, :description, :user_id, :date)
   end
 end

@@ -106,3 +106,7 @@ p {
   padding: 10px;
   text-align: center;
 }
+
+.all_events ul {
+  height: auto;
+}

@@ -1,12 +1,9 @@
 
-
+<div>
 <h1><%= @event.title %></h1>
-
-<ul>
-  <li><%= @event.description %></li>
-  <li><%= @event.date.strftime '%A, %B %e, %Y' %></li>
-</ul>
-
+<li><%= @event.description %></li>
+<li><%= @event.date %></li>
+</div>
 
 <div class="controls">
   <%= link_to 'Edit event', edit_event_path(@event) %>
