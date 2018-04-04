@@ -13,14 +13,14 @@ body {
     text-align: center;
 
 }
-li {
-      margin-bottom: -20px
-}
+
 .nav li, a {
   font-family: 'Oswald', sans-serif;
   font-size: 1.2em;
   line-height: 40px;
   height: 40px;
+  list-style-type: none;
+
   border-bottom: 1px solid #888;
   margin-bottom: -20px
 }
@@ -43,6 +43,8 @@ li {
     height: 54px;
     line-height: 50px;
     font-size: 1.4em;
+    list-style-type: none;
+
   }
   .events-nav {
     background-color: #fdba00;
@@ -60,6 +62,8 @@ li {
   }
   .nav li, a {
     display: inline-block;
+    list-style-type: none;
+
     margin: 0px;
   }
 }
@@ -107,6 +111,90 @@ p {
   text-align: center;
 }
 
-.all_events ul {
+.events a li {
   height: auto;
+  font-size: 20px;
+  list-style-type: none;
+  display: inline-block;
+
+}
+
+.controls a {
+  width: 150px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+}
+.controls {
+  padding: 0;
+  margin: 0;
+  border: 1px solid black;
+  text-align: center;
+  background-color: #17c6b4;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.event {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  list-style-type: none;
+  font-size: 30px;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0;
+}
+
+.placecontrols a {
+  font-size: 20px;
+  width: 150px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.place li {
+  list-style-type: none;
+}
+
+div.events {
+  max-width: 380px;
+  text-align: center;
+  margin: 0 auto;
+}
+.events a {
+  background-color: #17c6b4;
+  width: 378.5px;
+}
+div.event {
+  max-width: 380px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.events ul {
+  border: 1px solid black;
+}
+
+div.places {
+  max-width: 380px;
+  text-align: center;
+  margin: 0 auto;
+}
+.places a {
+  background-color: #17c6b4;
+  width: 378.5px;
+}
+div.place {
+  max-width: 380px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.places ul {
+  border: 1px solid black;
 }
