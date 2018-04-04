@@ -15,6 +15,14 @@
   <%= f.label :user_id %>
   <%= f.text_field :user_id, :value => session[:user_id] %>
   <br>
-    <%= f.submit %>
+
+    <h3>Add Place</h3>
+     <%= form_tag do %>
+       <%= label_tag :name %>
+       <%= select_tag :place_id, options_for_select(Place.pluck(:name, :id)), :include_blank => true %>
+       <%= f.submit %>
+
+     <% end %>
+
 
 <% end %>

@@ -26,8 +26,14 @@ class EventsController < ApplicationController
 
   def show
     @event = Event.find params[:id]
-
   end
+
+  def add_place
+   event = Event.find params[:id]
+   place = Place.find params[:place_id]
+   event.places << place
+   redirect_to event
+ end
 
   def destroy
     event = Event.find params[:id]
@@ -39,6 +45,6 @@ class EventsController < ApplicationController
   private
 
   def event_params
-    params.require(:event).permit(:title, :description, :user_id, :date)
+    params.require(:event).permit(:title, :description, :user_id, :date, :place_id)
   end
 end

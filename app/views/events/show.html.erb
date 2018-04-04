@@ -3,6 +3,11 @@
 <li><%= @event.title %></li>
 <li><%= @event.description %></li>
 <li><%= @event.date %></li>
+
+  <% @event.places.each do |place| %>
+  <li><%= link_to place.name, place %></li>
+  <% end %>
+
 </div>
 
 <div class="controls">

@@ -29,6 +29,13 @@ class PlacesController < ApplicationController
 
   end
 
+  def add_event
+   place = Place.find params[:id]
+   event = Event.find params[:event_id]
+   place.events << event
+   redirect_to place
+  end
+
   def destroy
     place = Place.find params[:id]
     place.destroy
