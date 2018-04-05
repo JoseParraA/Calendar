@@ -1,6 +1,7 @@
 class EventsController < ApplicationController
   def index
-    @events = Event.all
+    current_user = User.find session[:user_id]
+    @events = current_user.events
   end
 
   def new
@@ -10,7 +11,6 @@ class EventsController < ApplicationController
   def create
     event = Event.create event_params
     place = Place.find params[:place_id]
-    # event.place_id << place.id
     event.place_id = place.id
     event.save
     redirect_to event
@@ -40,7 +40,6 @@ class EventsController < ApplicationController
   def destroy
     event = Event.find params[:id]
     event.destroy
-     #binding.pry
     redirect_to event
   end
 
