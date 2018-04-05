@@ -28,7 +28,7 @@ p5 = Place.create(:name => 'Westfield', :facilities => 'Wifi, bus, train', :time
 u1.events << e1 << e2
 u2.events << e3 << e4
 
-p1.events << e1
+p4.events << e1
 p1.events << e2
 p2.events << e3
 p5.events << e4

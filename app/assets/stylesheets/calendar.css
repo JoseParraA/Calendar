@@ -216,3 +216,12 @@ div.place {
   width: 380px;
   max-width: 378.5px;
 }
+
+div.banner {
+  margin: 0 auto;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+  background-color: #17c6b4;
+}
