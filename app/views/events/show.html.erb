@@ -1,11 +1,12 @@
 <h1>Event</h1>
 <div class="event">
-<li><%= @event.title %></li>
-<li><%= @event.description %></li>
-<li><%= @event.date %></li>
+<li><p>Title:   </p><%= @event.title %></li>
+<li><p>Description:   </p><%= @event.description %></li>
+<li><p>Date:   </p><%= @event.date %></li>
 
-  <% @event.places.each do |place| %>
-  <li><%= link_to place.name, place %></li>
+  <%# @event.place.each do |place| %>
+  <% unless @event.place.name == nil || @event.place.name.empty? %>
+  <li><%= link_to @event.place.name, @event.place %></li>
   <% end %>
 
 </div>

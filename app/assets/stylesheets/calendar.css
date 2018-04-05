@@ -109,11 +109,12 @@ p {
   margin-bottom: 10px;
   padding: 10px;
   text-align: center;
+  font-size: 20px;
 }
 
 .events a li {
   height: auto;
-  font-size: 20px;
+  font-size: 30px;
   list-style-type: none;
   display: inline-block;
 
@@ -159,6 +160,7 @@ ul {
 }
 .place li {
   list-style-type: none;
+  font-size: 30px;
 }
 
 div.events {
@@ -193,8 +195,24 @@ div.place {
   max-width: 380px;
   margin: 0 auto;
   padding-top: 10px;
+  text-align: center;
+  border: 1px solid black;
+  font-size: 20px;
+
 }
 
 .places ul {
   border: 1px solid black;
+}
+.placecontrols {
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid black;
+  max-width: 380px;
+  background-color: #17c6b4;
+}
+.event a {
+  font-size: 30px;
+  width: 380px;
+  max-width: 378.5px;
 }

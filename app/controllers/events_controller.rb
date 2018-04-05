@@ -9,8 +9,10 @@ class EventsController < ApplicationController
 
   def create
     event = Event.create event_params
-    # raise
-
+    place = Place.find params[:place_id]
+    # event.place_id << place.id
+    event.place_id = place.id
+    event.save
     redirect_to event
   end
 

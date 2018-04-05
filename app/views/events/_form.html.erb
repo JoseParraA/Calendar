@@ -19,7 +19,7 @@
     <h3>Add Place</h3>
      <%= form_tag do %>
        <%= label_tag :name %>
-       <%= select_tag :place_id, options_for_select(Place.pluck(:name, :id)), :include_blank => true %>
+       <%= select_tag :place_id, options_for_select(Place.pluck(:name, :id)), :include_blank => true, :required => true %>
        <%= f.submit %>
 
      <% end %>
