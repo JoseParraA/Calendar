@@ -101,7 +101,7 @@ h1, h2 {
 
 img {
   margin: auto;
-  padding-left: 100px;
+  padding-left: 170px;
 }
 p {
   background-color: white;
@@ -224,4 +224,9 @@ div.banner {
 footer p {
   margin: 0;
   background-color: #17c6b4;
+}
+.content p {
+  text-align: center;
+  padding-bottom: 0 auto;
+  margin: 20px 0;
 }
