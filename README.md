@@ -1,5 +1,7 @@
 # Calendar
 
+[Project 1: Calendar](https://limitless-refuge-88831.herokuapp.com/)
+
 Calendar application will help you to keep record of all the events and places that are important.
 This project is part of Web Development Immersive at General Assembly Sydney.
 
@@ -7,7 +9,20 @@ This project is part of Web Development Immersive at General Assembly Sydney.
 
 Ruby 2.4.1
 
+## Built with
+
+* HTML
+
+* CSS
+
+* Ruby on Rails
+
 ## TODO
-* Create a calendar to display the date and events related with each event.
+
+* Create a calendar to display the date related with each event.
+
 * Add a google map screen on each place
-* Make the page responsible
+
+* Make the page responsible.
+
+* Improve layout.
