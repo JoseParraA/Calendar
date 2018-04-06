@@ -19,7 +19,7 @@ Ruby 2.4.1
 
 ## TODO
 
-* Create a calendar to display the date related with each event.
+* Create a calendar which display the events on the exact date.
 
 * Add a google map screen on each place
 
