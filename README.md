@@ -1,5 +1,9 @@
 # Calendar
 
+## Home
+<img src="app/assets/images/Home.png">
+
+
 [Project 1: Calendar](https://limitless-refuge-88831.herokuapp.com/)
 
 Calendar application will help you to keep record of all the events and places that are important.
