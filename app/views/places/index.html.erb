@@ -8,19 +8,24 @@
   </ul>
 <% end %>
 </div>
-<p>hola<p>
-  <p>hola</p>
 
-<div id="map" style="width:400px;heigth:400px">My mao will go here</div>
-
-<script>
-function myMap() {
-    var mapOptions = {
-        center: new google.maps.LatLng(51.5, -0.12),
-        zoom: 10,
-        mapTypeId: google.maps.MapTypeId.HYBRID
-    }
-var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+<h3>My Google Maps Demo</h3>
+ <!--The div element for the map -->
+ <div id="map"></div>
+ <script>
+// Initialize and add the map
+function initMap() {
+// The location of Uluru
+var uluru = {lat: -25.344, lng: 131.036};
+// The map, centered at Uluru
+var map = new google.maps.Map(
+   document.getElementById('map'), {zoom: 4, center: uluru});
+// The marker, positioned at Uluru
+var marker = new google.maps.Marker({position: uluru, map: map});
 }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwJ8kJwKTwMCvDECcZ3jQ6hRvzHQEb2sk&callback=myMap"></script>
+ </script>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwJ8kJwKTwMCvDECcZ3jQ6hRvzHQEb2sk&callback=initMap">
+  </script>
+</div>
